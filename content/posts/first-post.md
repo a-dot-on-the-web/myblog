@@ -5,6 +5,7 @@ draft: false
 tags:
   - 作業メモ
   - はじめての記事
+  - AI
 ---
 
 今日はGitHubとHugoについて勉強しました。
