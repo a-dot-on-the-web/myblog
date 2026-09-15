@@ -17,12 +17,12 @@
   {{ .Content }}
 
 {{ with .Params.tags }}
-  <p class="post-tags">
-    Tags:
+  <div class="post-tags">
+    <span class="tags-label">Tags:</span>
     {{ range . }}
-      <a href="{{ (printf "/tags/%s/" (. | urlize)) | relURL }}">{{ . }}</a>
+      <a class="tag" href="{{ (printf "/tags/%s/" (. | urlize)) | relURL }}">{{ . }}</a>
     {{ end }}
-  </p>
+  </div>
 {{ end }}
   
 <p class="home-link">
