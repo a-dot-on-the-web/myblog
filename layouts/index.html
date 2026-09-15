@@ -8,7 +8,12 @@
 </head>
 <body>
   <h1 class="site-title">{{ .Site.Title }}</h1>
-
+  
+  <nav class="site-nav">
+    <a href="{{ "/" | relURL }}">Home</a>
+    <a href="{{ "/about/" | relURL }}">About</a>
+  </nav>
+  
   <p style="margin-bottom: 0;">A quiet place for notes, ideas, and everyday thoughts.</p>
 
   <h2 class="posts-heading">Posts</h2>
