@@ -3,6 +3,11 @@ title: "GitHub Pages + Hugo"
 subtitle: "自分用チートシート"
 date: 2026-09-14
 draft: false
+tags:
+  - 作業メモ
+  - GitHub
+  - Hugo
+  - AI
 ---
 
 自分用にまとめたメモです。
