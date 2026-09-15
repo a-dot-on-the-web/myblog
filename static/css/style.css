@@ -112,3 +112,7 @@ small {
   font-weight: 600;
   opacity: 0.75;
 }
+
+.site-nav a {
+  margin-right: 1.5rem;
+}
