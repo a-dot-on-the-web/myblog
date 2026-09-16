@@ -16,6 +16,15 @@
   
   <p style="margin-bottom: 0;">A quiet place for notes, ideas, and everyday thoughts.</p>
 
+{{ with .Site.Taxonomies.tags }}
+  <div class="home-tags">
+    <span>Tags:</span>
+    {{ range . }}
+      <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+    {{ end }}
+  </div>
+{{ end }}
+  
   <h2 class="posts-heading">Posts</h2>
 
  <ul class="post-list">
