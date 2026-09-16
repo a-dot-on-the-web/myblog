@@ -20,9 +20,9 @@
   <div class="post-tags">
     <span class="tags-label">Tags:</span>
 　　{{ range . }}
- 　　 {{ with $.Site.GetPage (printf "/tags/%s" .) }}
-   　　 <a class="tag" href="{{ .RelPermalink }}">{{ .Title }}</a>
-　　  {{ end }}
+  　　{{ with $.Site.GetPage (printf "/tags/%s" .) }}
+    　　<a class="tag" href="{{ .RelPermalink }}">{{ .Title }}</a>
+  　　{{ end }}
 　　{{ end }}
   </div>
 {{ end }}
