@@ -1,0 +1,21 @@
+</head>
+
+<body>
+
+  <h1>{{ .Title }}</h1>
+
+  <ul class="post-list">
+    {{ range .Pages }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <small class="post-list-date">{{ .Date.Format "01-02-2006" }}</small>
+      </li>
+    {{ end }}
+  </ul>
+
+  <p class="home-link">
+    <a href="{{ .Site.Home.RelPermalink }}">← Home</a>
+  </p>
+
+</body>
+</html>
