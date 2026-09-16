@@ -154,3 +154,8 @@ small {
   margin-right: 0.6rem;
   font-size: 0.75rem;
 }
+
+.term-page a,
+.term-page a:visited {
+  color: inherit;
+}
