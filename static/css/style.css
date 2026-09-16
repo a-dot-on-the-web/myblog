@@ -137,12 +137,16 @@ small {
   border-radius: 999px;
   background: #f0f4fa;
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
 }
 
-.home-tags {
-  margin-top: 0.8rem;
-  margin-bottom: 1.5rem;
+.home-tags a {
+  display: inline-block;
+  margin-right: 0.35rem;
+  padding: 0.12rem 0.4rem;
+  border-radius: 999px;
+  background: #f0f4fa;
+  text-decoration: none;
   font-size: 0.75rem;
 }
 
