@@ -160,12 +160,6 @@ small {
   color: inherit;
 }
 
-.term-page {
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 2rem 1.5rem;
-}
-
 .term-page a,
 .term-page a:visited {
   color: inherit;
