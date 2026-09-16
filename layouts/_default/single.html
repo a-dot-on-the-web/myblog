@@ -19,9 +19,11 @@
 {{ with .Params.tags }}
   <div class="post-tags">
     <span class="tags-label">Tags:</span>
-    {{ range . }}
-      <a class="tag" href="{{ (printf "/tags/%s/" (. | urlize)) | relURL }}">{{ . }}</a>
-    {{ end }}
+　　{{ range . }}
+ 　　 {{ with $.Site.GetPage (printf "/tags/%s" .) }}
+   　　 <a class="tag" href="{{ .RelPermalink }}">{{ .Title }}</a>
+　　  {{ end }}
+　　{{ end }}
   </div>
 {{ end }}
   
